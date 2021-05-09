@@ -1,13 +1,14 @@
 :root {
   --accent-color: #2196f3;
   --top-line-logo-color: #000000;
-  --hero-background-color: #2f303a;
+  --dark-background-color: #2f303a;
   --title-color: #212121;
+  --light-background-color: #f5f4fa;
+  --footer-contact-color: rgba(255, 255, 255, 0.6);
+  --modal-btn-accent: #188ce8;
+  --text-on-dark-color: #ffffff;
 }
 
-/*top line background: #ffffff; */
-/* hero footer background: #2F303A; */
-/* team background: #F5F4FA; */
 .list {
   list-style: none;
 }
@@ -49,7 +50,7 @@ body {
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
-  color: #212121;
+  color: var(--title-color);
 }
 
 .navigation-list-link:hover,
@@ -76,6 +77,9 @@ body {
 /*======= END TOP LINE =======*/
 
 /*======= HERO =======*/
+.hero {
+  background-color: var(--dark-background-color);
+}
 .hero-title {
   font-weight: 900;
   font-size: 44px;
@@ -83,8 +87,7 @@ body {
   text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
-  color: #ffffff;
-  background-color: var(--hero-background-color);
+  color: var(--text-on-dark-color);
 }
 
 .modal-btn {
@@ -95,14 +98,14 @@ body {
   align-items: center;
   text-align: center;
   letter-spacing: 0.06em;
-  color: #ffffff;
+  color: var(--text-on-dark-color);
   background-color: var(--accent-color);
   cursor: pointer;
 }
 
 .modal-btn:hover,
 .modal-btn:focus {
-  background-color: #188ce8;
+  background-color: var(--modal-btn-accent);
 }
 /*======= END HERO =======*/
 
@@ -123,6 +126,9 @@ body {
 /*======= END FEATURES =======*/
 
 /*======= TEAM =======*/
+.team {
+  background-color: var(--light-background-color);
+}
 
 .team-list {
   font-size: 16px;
@@ -137,9 +143,12 @@ body {
 /*======= END TEAM =======*/
 
 /*======= FOOTER =======*/
-/*.footer-logo {
-  color: #ffffff;
-}*/
+.footer {
+  background-color: var(--dark-background-color);
+}
+.footer-logo {
+  color: var(--text-on-dark-color);
+}
 .adress-list {
   font-style: normal;
   font-size: 14px;
@@ -147,10 +156,48 @@ body {
   letter-spacing: 0.03em;
 }
 .adress-link {
-  /*color: #ffffff;*/
+  color: var(--text-on-dark-color);
 }
 
 .footer-contact-link {
-  /*color: rgba(255, 255, 255, 0.6);*/
+  color: var(--footer-contact-color);
 }
 /*======= END FOOTER =======*/
+
+/* ======= PORTFOLIO ======= */
+.filter-list-item {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--title-color);
+}
+.filter-btn {
+  /* position: absolute; */
+  width: 128px;
+  height: 38px;
+  left: 576px;
+  top: 174px;
+  background-color: var(--light-background-color);
+  border-radius: 4px;
+  cursor: pointer;
+}
+.filter-btn:focus,
+.filter-btn:hover {
+  background-color: var(--accent-color);
+  color: var(--text-on-dark-color);
+}
+.project-title {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+  color: var(--title-color);
+}
+.project-type {
+  font-size: 16px;
+  line-height: 1.87;
+  letter-spacing: 0.03em;
+}
+/* ======= END PORTFOLIO ======= */
