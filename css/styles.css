@@ -162,6 +162,11 @@ body {
 .footer-contact-link {
   color: var(--footer-contact-color);
 }
+
+.adress-list .link:hover,
+.adress-list .link:focus {
+  color: var(--accent-color);
+}
 /*======= END FOOTER =======*/
 
 /* ======= PORTFOLIO ======= */
