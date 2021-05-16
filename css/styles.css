@@ -18,13 +18,13 @@
 }
 
 body {
-  font-family: "Roboto", sans-serif;
+  font-family: 'Roboto', sans-serif;
   color: #757575;
 }
 
 /*======= COMPONENTS =======*/
 .logo-link {
-  font-family: "Raleway", sans-serif;
+  font-family: 'Raleway', sans-serif;
   font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
@@ -194,7 +194,6 @@ body {
   color: var(--text-on-dark-color);
 }
 .project-title {
-  font-weight: 700;
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
